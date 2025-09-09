@@ -1,4 +1,12 @@
-import { Mail, Phone, Github, Linkedin, Globe, MapPin, Star } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  Github,
+  Linkedin,
+  Globe,
+  MapPin,
+  Star,
+} from "lucide-react";
 
 type Project = {
   title: string;
@@ -10,19 +18,22 @@ type Project = {
 const projects: Project[] = [
   {
     title: "Mobile Banking UI",
-    description: "Designed a secure, delightful mobile-first banking interface with real-time charts and PWA support.",
+    description:
+      "Designed a secure, delightful mobile-first banking interface with real-time charts and PWA support.",
     tags: ["React", "Tailwind", "PWA"],
     link: "#",
   },
   {
     title: "AI Resume Builder",
-    description: "Personalized resume generation with prompt-tuned LLMs and export to PDF/DOCX.",
+    description:
+      "Personalized resume generation with prompt-tuned LLMs and export to PDF/DOCX.",
     tags: ["TypeScript", "LLM", "Node"],
     link: "#",
   },
   {
     title: "Portfolio CMS",
-    description: "Headless CMS driven portfolio with instant previews and content scheduling.",
+    description:
+      "Headless CMS driven portfolio with instant previews and content scheduling.",
     tags: ["CMS", "React", "SSR"],
     link: "#",
   },
@@ -70,7 +81,9 @@ export default function Index() {
                   />
                   <div className="text-white drop-shadow">
                     <p className="text-sm/5 opacity-90">Hello, I'm</p>
-                    <h2 className="text-xl font-bold tracking-tight">Myk Palado</h2>
+                    <h2 className="text-xl font-bold tracking-tight">
+                      Myk Palado
+                    </h2>
                   </div>
                 </div>
               </div>
@@ -80,7 +93,9 @@ export default function Index() {
                 {/* Bio */}
                 <Section title="Bio" icon={<MapPin className="h-4 w-4" />}>
                   <p className="text-sm text-muted-foreground">
-                    Product-oriented software engineer focused on high-quality, accessible interfaces. I design and build fast, elegant web apps with a love for detail and DX.
+                    Product-oriented software engineer focused on high-quality,
+                    accessible interfaces. I design and build fast, elegant web
+                    apps with a love for detail and DX.
                   </p>
                 </Section>
 
@@ -88,7 +103,10 @@ export default function Index() {
                 <Section title="Skills" icon={<Star className="h-4 w-4" />}>
                   <div className="space-y-3">
                     {skills.map((s) => (
-                      <div key={s.group} className="rounded-xl border bg-white/70 p-3 shadow-sm backdrop-blur-sm dark:border-white/10 dark:bg-zinc-800/60">
+                      <div
+                        key={s.group}
+                        className="rounded-xl border bg-white/70 p-3 shadow-sm backdrop-blur-sm dark:border-white/10 dark:bg-zinc-800/60"
+                      >
                         <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-foreground/70">
                           {s.group}
                         </p>
@@ -117,17 +135,38 @@ export default function Index() {
                         className="group relative overflow-hidden rounded-2xl border bg-white/80 p-4 shadow-sm transition hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary/40 dark:border-white/10 dark:bg-zinc-800/70"
                       >
                         <div className="absolute -right-10 -top-10 h-24 w-24 rounded-full bg-gradient-to-br from-primary/30 to-fuchsia-500/30 blur-xl transition-all group-hover:scale-125" />
-                        <h3 className="font-semibold tracking-tight">{p.title}</h3>
-                        <p className="mt-1 text-sm text-muted-foreground">{p.description}</p>
+                        <h3 className="font-semibold tracking-tight">
+                          {p.title}
+                        </h3>
+                        <p className="mt-1 text-sm text-muted-foreground">
+                          {p.description}
+                        </p>
                         <div className="mt-3 flex flex-wrap gap-1.5">
                           {p.tags.map((t) => (
-                            <span key={t} className="rounded-full bg-muted px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
+                            <span
+                              key={t}
+                              className="rounded-full bg-muted px-2 py-0.5 text-[10px] font-medium text-muted-foreground"
+                            >
                               {t}
                             </span>
                           ))}
                         </div>
                         <span className="mt-3 inline-flex items-center gap-1 text-sm text-primary">
-                          View <svg viewBox="0 0 20 20" className="h-4 w-4"><path d="M7 5h8v8" fill="none" stroke="currentColor" strokeWidth="2"/><path d="M15 5 5 15" fill="none" stroke="currentColor" strokeWidth="2"/></svg>
+                          View{" "}
+                          <svg viewBox="0 0 20 20" className="h-4 w-4">
+                            <path
+                              d="M7 5h8v8"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                            />
+                            <path
+                              d="M15 5 5 15"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                            />
+                          </svg>
                         </span>
                       </a>
                     ))}
@@ -137,23 +176,65 @@ export default function Index() {
                 {/* Contact */}
                 <Section title="Contact" icon={<Mail className="h-4 w-4" />}>
                   <div className="grid grid-cols-2 gap-2">
-                    <ContactButton href="mailto:hello@example.com" icon={<Mail className="h-4 w-4" />} label="Email" />
-                    <ContactButton href="tel:+1234567890" icon={<Phone className="h-4 w-4" />} label="Call" />
-                    <ContactButton href="#" icon={<Linkedin className="h-4 w-4" />} label="LinkedIn" />
-                    <ContactButton href="#" icon={<Github className="h-4 w-4" />} label="GitHub" />
+                    <ContactButton
+                      href="mailto:hello@example.com"
+                      icon={<Mail className="h-4 w-4" />}
+                      label="Email"
+                    />
+                    <ContactButton
+                      href="tel:+1234567890"
+                      icon={<Phone className="h-4 w-4" />}
+                      label="Call"
+                    />
+                    <ContactButton
+                      href="#"
+                      icon={<Linkedin className="h-4 w-4" />}
+                      label="LinkedIn"
+                    />
+                    <ContactButton
+                      href="#"
+                      icon={<Github className="h-4 w-4" />}
+                      label="GitHub"
+                    />
                   </div>
                   <div className="mt-3 text-xs text-muted-foreground">
-                    Prefer a portfolio site? <a className="inline-flex items-center gap-1 font-medium text-primary" href="#"><Globe className="h-3.5 w-3.5" /> Visit Website</a>
+                    Prefer a portfolio site?{" "}
+                    <a
+                      className="inline-flex items-center gap-1 font-medium text-primary"
+                      href="#"
+                    >
+                      <Globe className="h-3.5 w-3.5" /> Visit Website
+                    </a>
                   </div>
                 </Section>
 
                 {/* Other Details */}
                 <Section title="More" icon={<Globe className="h-4 w-4" />}>
                   <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li><span className="font-medium text-foreground">Location:</span> Manila, PH (Remote-friendly)</li>
-                    <li><span className="font-medium text-foreground">Experience:</span> 6+ years building products end‑to‑end</li>
-                    <li><span className="font-medium text-foreground">Availability:</span> Open to freelance and full-time roles</li>
-                    <li><span className="font-medium text-foreground">Interests:</span> Design systems, 3D on the web, accessibility</li>
+                    <li>
+                      <span className="font-medium text-foreground">
+                        Location:
+                      </span>{" "}
+                      Manila, PH (Remote-friendly)
+                    </li>
+                    <li>
+                      <span className="font-medium text-foreground">
+                        Experience:
+                      </span>{" "}
+                      6+ years building products end‑to‑end
+                    </li>
+                    <li>
+                      <span className="font-medium text-foreground">
+                        Availability:
+                      </span>{" "}
+                      Open to freelance and full-time roles
+                    </li>
+                    <li>
+                      <span className="font-medium text-foreground">
+                        Interests:
+                      </span>{" "}
+                      Design systems, 3D on the web, accessibility
+                    </li>
                   </ul>
                 </Section>
 
@@ -166,32 +247,53 @@ export default function Index() {
         </div>
 
         <footer className="text-center text-xs text-muted-foreground">
-          Tip: View on mobile or resize to see the phone UI. Toggle dark mode in your OS to preview.
+          Tip: View on mobile or resize to see the phone UI. Toggle dark mode in
+          your OS to preview.
         </footer>
       </div>
     </div>
   );
 }
 
-function Section({ title, icon, children }: { title: string; icon?: React.ReactNode; children: React.ReactNode }) {
+function Section({
+  title,
+  icon,
+  children,
+}: {
+  title: string;
+  icon?: React.ReactNode;
+  children: React.ReactNode;
+}) {
   return (
     <section className="mb-5">
       <div className="mb-2 flex items-center gap-2">
         {icon}
-        <h3 className="text-sm font-semibold tracking-wide text-foreground/80">{title}</h3>
+        <h3 className="text-sm font-semibold tracking-wide text-foreground/80">
+          {title}
+        </h3>
       </div>
       {children}
     </section>
   );
 }
 
-function ContactButton({ href, icon, label }: { href: string; icon: React.ReactNode; label: string }) {
+function ContactButton({
+  href,
+  icon,
+  label,
+}: {
+  href: string;
+  icon: React.ReactNode;
+  label: string;
+}) {
   return (
     <a
       href={href}
       className="group inline-flex items-center justify-center gap-2 rounded-xl border bg-white/80 px-3 py-2 text-sm font-medium text-foreground shadow-sm ring-1 ring-inset ring-black/5 transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-primary/40 dark:border-white/10 dark:bg-zinc-800/70"
     >
-      <span className="text-primary transition-transform group-hover:-translate-y-0.5">{icon}</span>
+      <span className="text-primary transition-transform group-hover:-translate-y-0.5">
+        {icon}
+      </span>
       {label}
     </a>
   );

@@ -20,5 +20,6 @@ Quick start:
 3. Open in the Expo Go app (iOS/Android) or simulator.
 
 Notes:
+
 - Replace images in `assets/` (icon.png, splash.png, avatar.png).
 - This is scaffold code — run `npm install` inside `rn-app` before running.
