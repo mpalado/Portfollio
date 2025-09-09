@@ -1,0 +1,2 @@
+Replace these with real images: icon.png, splash.png, avatar.png
+You can substitute images in this folder. The code references assets/icon.png and assets/splash.png and assets/avatar.png.
