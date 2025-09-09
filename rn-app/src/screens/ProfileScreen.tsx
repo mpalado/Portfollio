@@ -12,7 +12,7 @@ export default function ProfileScreen() {
       <View style={styles.phone}>
         <View style={styles.statusBar} />
         <View style={styles.header}>
-          <Image source={require('../../assets/avatar.png')} style={styles.avatar} />
+          <Image source={{ uri: 'https://avatars.dicebear.com/api/initials/Myk.png' }} style={styles.avatar} />
           <View style={{ marginLeft: 12 }}>
             <Text style={styles.name}>Myk Palado</Text>
             <Text style={styles.title}>Product Engineer • Designer</Text>
