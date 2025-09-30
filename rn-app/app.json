@@ -3,8 +3,11 @@
     "name": "Myk Palado",
     "slug": "myk-profile-rn",
     "version": "1.0.0",
-    "sdkVersion": "49.0.0",
-    "platforms": ["ios", "android", "web"],
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "scheme": "mykprofile",
@@ -13,7 +16,11 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "updates": { "fallbackToCacheTimeout": 0 },
-    "assetBundlePatterns": ["**/*"]
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
   }
 }
